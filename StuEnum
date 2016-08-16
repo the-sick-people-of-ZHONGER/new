@@ -1,0 +1,27 @@
+public class StuEnum
+{
+  private void calcByEnum(int iNum,int iOff, float percent)
+  {
+    float fMinDiff+1.0f,fTmp;
+    int iRealNum=300;
+    for(int i=iNum-iOff+1;i<=iNum;i++)
+    {
+      fTmp=Math.abs(Math.round(i*fPercent)/(float)i-fPercent);
+      if(fTmp<fMinDiff)
+      {
+        fMinDiff=fTmp;
+        iRealNum=i;
+      }
+    }
+    int iJiuye=Math.round(iRealNum*fPercent);
+    System.out.printIn("all people="+iRealNum);
+    System.out.printIn("number of up="+iJiuye);
+    System.out.printIn("preblem"+fPercent*100+"%");
+    System.out.printIn("answer"+(ijiuye/(float)iRealNum)*100+"%");
+  }
+  public static void main(String args[])
+  {
+    StuEnum obj=new StuEnum():
+    obj.calcByEnum(300,20,0.8323f);
+  }
+}
