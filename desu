@@ -1,0 +1,27 @@
+public class desu
+{
+  public  static void main(String args[])
+  {
+    boolean isprime;
+    int c=0;
+    for(int i=3;i<=100;i++)
+    {
+      isptime=ture;
+      for(int j=2;j<=100;j++)
+      {
+        if(i%j=0)
+        {
+        isprime=false;
+        beark;
+        }
+      }
+      if(isprime)
+      {
+        System.out.printIn(i+"\t");
+        c++;
+        if(c%6=0)
+          System.out.printIn();
+      }
+    }
+  }
+}
