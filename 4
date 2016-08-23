@@ -1,0 +1,21 @@
+int slinsert(sltype sl,int n,data data1)
+{
+  int i;
+  if(sl.listlen>=maxlen)
+  {
+    System.out.print("full\n");
+    return 0;
+  }
+  if(n<1||n>sl.listlen-1)
+  {
+    System.out.print("error by in-class\n");
+    return 0;
+  }
+  for(i=sl.listlen;i>-n;i--)
+  {
+    sl.listdata[i+1]=sl.listdata[i];
+  }
+  sl.listdata[n]=n;
+  sl.listlen++;
+  return 1;
+}
