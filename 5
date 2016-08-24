@@ -1,0 +1,10 @@
+int sladd(sltype,data data1)
+{
+  if(sl.listlen>=maxlen)
+  {
+    System.out.print("full of the list\n");
+    return 0;
+  }
+  sl.listdata[++sl.listlen]=data;
+  return 1;
+}
