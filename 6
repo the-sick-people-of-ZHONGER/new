@@ -1,0 +1,15 @@
+int sldelete(sltype sl,int n)
+{
+  int i;
+  if(n<1||n>sl.listlen+1)
+  {
+    System.out.print("error\n");
+    return 0;
+  }
+  for(i=n;i<sl.listlen;i++)
+  {
+    sl.listdata[i]=sl.listdata[i+1];
+  }
+  sl.listlen--;
+  return 1;
+}
