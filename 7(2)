@@ -1,0 +1,11 @@
+int slfindbycont(sltype sl,String key)
+{
+  for(i=1;i<=sl.listlen;i++)
+  {
+    if(sl.listdata[i].key.compareto(key)=0
+    {
+      return i;
+    }
+  }
+  return 0;
+}
