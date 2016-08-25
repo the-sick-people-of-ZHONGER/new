@@ -1,0 +1,9 @@
+data slfindbynum(sltype sl,int n)
+{
+  if(n<1||n>sl.listlen+1)
+  {
+    System.out print("error\n");
+    return null;
+  }
+  return sl.listdata[n];
+}
