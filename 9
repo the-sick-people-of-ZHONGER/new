@@ -1,0 +1,57 @@
+public class p2_1
+{
+  public static void main(args[])
+  {
+    int 1;
+    sltype sl=new sltype();
+    data pdata;
+    String key;
+    
+    sl.slinit(sl);
+    System.out.print("loading finish\n");
+    
+    Scanner input=new Scanner(System.in);
+    
+    do
+    {
+      System.out.print("enter point\n");
+      data data1=new data();
+      data1.key=input.next();
+      data1.name=input.next();
+      data1.age=input.nextInt();
+      
+      if(data1.age!=0)
+      {
+        if(sl.sladd(sl.data1)==0)
+        {
+        break;
+        }
+      }
+      else
+      {
+        break;
+      }
+    }
+    while(true);
+    System.out.print("\n the list:\n");
+    sl.slall(sl);
+    
+    System.out.print("\n the getout number\n");
+    i=input.nextInt();
+    pdata=sl.slfindbynum(sl,i);
+    if(pdata!=null)
+    {
+      System.out.printf("4th point:(%s,%s,%d)\n,i,pdata.key,pdata.name,pdata.age);
+    }
+    
+    System.out.print.out.print("\n keyword:\n");
+    key=input.next();
+    i=sl.slfindbycont(sl,key);
+    pdata=sl.slfindbynum(sl,i);
+    if(pdata!=null)
+    {
+      System.out.printf("%d"+"th point:(%s,%s,%d),i,pdata.key,pdata.name,pdata.age);
+    }
+  
+  }
+]
